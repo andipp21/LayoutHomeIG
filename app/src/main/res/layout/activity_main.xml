@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideBotStoryTop"
+                        app:layout_constraintGuide_begin="40dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideBotStory"
+                        app:layout_constraintGuide_begin="128dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/ivStorySatu"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
+                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivStoryDua"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
+                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
+                        app:layout_constraintStart_toEndOf="@id/ivStorySatu"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivStoryTiga"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
+                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryDua"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivStoryEmpat"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
+                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryTiga"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivStoryLima"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
+                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryEmpat"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="16dp"/>
+                    <ImageView
+                        android:id="@+id/ivStoryEnam"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
+                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryLima"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="16dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLuarStory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="128dp"/>
+
+            <View
+                app:layout_constraintTop_toBottomOf="@id/guideLuarStory"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"/>
+            
+            <ImageView
+                android:id="@+id/ivProfilSatu"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <ImageView
+                android:id="@+id/ivFotoSatu"
+                app:layout_constraintTop_toBottomOf="@id/guideLuarStory"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="512dp"/>
+
+            <ImageView
+                android:id="@+id/ivFotoDua"
+                app:layout_constraintTop_toBottomOf="@id/ivFotoSatu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="512dp"/>
+
+            <!--            <ImageView-->
+<!--                android:src="@drawable/foto_tiga"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@id/headerBG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <View
+        app:layout_constraintBottom_toTopOf="@id/footerBG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/headerBG"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_footer_header"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        app:layout_constraintTop_toTopOf="@id/headerBG"
+        app:layout_constraintBottom_toBottomOf="@id/headerBG"
+        app:layout_constraintStart_toStartOf="@id/headerBG"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_outline_photo_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivDM"
+        app:layout_constraintTop_toTopOf="@id/headerBG"
+        app:layout_constraintBottom_toBottomOf="@id/headerBG"
+        app:layout_constraintEnd_toEndOf="@id/headerBG"
+        android:src="@drawable/ic_dm"
+        android:layout_marginEnd="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvInstagram"
+        app:layout_constraintTop_toTopOf="@id/headerBG"
+        app:layout_constraintBottom_toBottomOf="@id/headerBG"
+        app:layout_constraintStart_toEndOf="@id/ivCamera"
+        android:text="Instagram"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/footerBG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_footer_header"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/ivHome"
+        app:layout_constraintBottom_toBottomOf="@id/footerBG"
+        app:layout_constraintTop_toTopOf="@id/footerBG"
+        app:layout_constraintStart_toStartOf="@id/footerBG"
+        app:layout_constraintEnd_toStartOf="@id/ivSearch"
+        android:src="@drawable/ic_outline_home_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        app:layout_constraintTop_toTopOf="@id/footerBG"
+        app:layout_constraintBottom_toBottomOf="@id/footerBG"
+        app:layout_constraintStart_toEndOf="@id/ivHome"
+        app:layout_constraintEnd_toStartOf="@id/ivAdd"
+        android:src="@drawable/ic_outline_search_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        app:layout_constraintTop_toTopOf="@id/footerBG"
+        app:layout_constraintBottom_toBottomOf="@id/footerBG"
+        app:layout_constraintStart_toEndOf="@id/ivSearch"
+        app:layout_constraintEnd_toStartOf="@id/ivLove"
+        android:src="@drawable/ic_outline_add_box_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivLove"
+        app:layout_constraintTop_toTopOf="@id/footerBG"
+        app:layout_constraintBottom_toBottomOf="@id/footerBG"
+        app:layout_constraintStart_toEndOf="@id/ivAdd"
+        app:layout_constraintEnd_toStartOf="@id/ivProfile"
+        android:src="@drawable/ic_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        app:layout_constraintTop_toTopOf="@id/footerBG"
+        app:layout_constraintBottom_toBottomOf="@id/footerBG"
+        app:layout_constraintStart_toEndOf="@id/ivLove"
+        app:layout_constraintEnd_toEndOf="@id/footerBG"
+        android:src="@drawable/foto_tiga"
+        android:scaleType="centerCrop"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
