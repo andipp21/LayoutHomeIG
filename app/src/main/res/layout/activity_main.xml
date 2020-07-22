@@ -8,8 +8,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -25,76 +24,137 @@
 
                     <androidx.constraintlayout.widget.Guideline
                         android:id="@+id/guideBotStoryTop"
-                        app:layout_constraintGuide_begin="40dp"
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="40dp" />
 
                     <androidx.constraintlayout.widget.Guideline
                         android:id="@+id/guideBotStory"
-                        app:layout_constraintGuide_begin="128dp"
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="144dp" />
 
                     <ImageView
                         android:id="@+id/ivStorySatu"
-                        android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
-                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
-                        app:layout_constraintStart_toStartOf="parent"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"/>
+                        android:layout_marginStart="16dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@id/guideBotStoryTop"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tvStorySatu" />
+
+                    <TextView
+                        android:id="@+id/tvStorySatu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Story"
+                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
+                        app:layout_constraintEnd_toStartOf="@id/ivStorySatu"
+                        app:layout_constraintStart_toEndOf="@id/ivStorySatu"
+                        app:layout_constraintTop_toBottomOf="@id/ivStorySatu" />
 
                     <ImageView
                         android:id="@+id/ivStoryDua"
-                        android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
-                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
-                        app:layout_constraintStart_toEndOf="@id/ivStorySatu"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"/>
+                        android:layout_marginStart="24dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="@id/ivStorySatu"
+                        app:layout_constraintStart_toEndOf="@id/ivStorySatu"
+                        app:layout_constraintTop_toTopOf="@id/ivStorySatu" />
+
+                    <TextView
+                        android:id="@+id/tvStoryDua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="andipp21"
+                        app:layout_constraintBottom_toBottomOf="@id/tvStorySatu"
+                        app:layout_constraintEnd_toStartOf="@id/ivStoryDua"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryDua"
+                        app:layout_constraintTop_toTopOf="@id/tvStorySatu" />
 
                     <ImageView
                         android:id="@+id/ivStoryTiga"
-                        android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
-                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
-                        app:layout_constraintStart_toEndOf="@id/ivStoryDua"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"/>
+                        android:layout_marginStart="24dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="@id/ivStorySatu"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryDua"
+                        app:layout_constraintTop_toTopOf="@id/ivStorySatu" />
+
+                    <TextView
+                        android:id="@+id/tvStoryTiga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="rarauw"
+                        app:layout_constraintBottom_toBottomOf="@id/tvStorySatu"
+                        app:layout_constraintEnd_toStartOf="@id/ivStoryTiga"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryTiga"
+                        app:layout_constraintTop_toTopOf="@id/tvStorySatu" />
 
                     <ImageView
                         android:id="@+id/ivStoryEmpat"
-                        android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
-                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
-                        app:layout_constraintStart_toEndOf="@id/ivStoryTiga"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"/>
+                        android:layout_marginStart="24dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="@id/ivStorySatu"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryTiga"
+                        app:layout_constraintTop_toTopOf="@id/ivStorySatu" />
+
+                    <TextView
+                        android:id="@+id/tvStoryEmpat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dessyrah"
+                        app:layout_constraintBottom_toBottomOf="@id/tvStorySatu"
+                        app:layout_constraintEnd_toStartOf="@id/ivStoryEmpat"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryEmpat"
+                        app:layout_constraintTop_toTopOf="@id/tvStorySatu" />
 
                     <ImageView
                         android:id="@+id/ivStoryLima"
-                        android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
-                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
-                        app:layout_constraintStart_toEndOf="@id/ivStoryEmpat"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"/>
+                        android:layout_marginStart="24dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="@id/ivStorySatu"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryEmpat"
+                        app:layout_constraintTop_toTopOf="@id/ivStorySatu" />
+
+                    <TextView
+                        android:id="@+id/tvStoryLima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="adindathomas"
+                        app:layout_constraintBottom_toBottomOf="@id/tvStorySatu"
+                        app:layout_constraintEnd_toStartOf="@id/ivStoryLima"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryLima"
+                        app:layout_constraintTop_toTopOf="@id/tvStorySatu" />
+
                     <ImageView
                         android:id="@+id/ivStoryEnam"
-                        android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toTopOf="@id/guideBotStory"
-                        app:layout_constraintTop_toBottomOf="@id/guideBotStoryTop"
-                        app:layout_constraintStart_toEndOf="@id/ivStoryLima"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"/>
+                        android:layout_marginStart="24dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="@id/ivStorySatu"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryLima"
+                        app:layout_constraintTop_toTopOf="@id/ivStorySatu" />
+
+                    <TextView
+                        android:id="@+id/tvStoryEnam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ryantris"
+                        app:layout_constraintBottom_toBottomOf="@id/tvStorySatu"
+                        app:layout_constraintEnd_toStartOf="@id/ivStoryEnam"
+                        app:layout_constraintStart_toEndOf="@id/ivStoryEnam"
+                        app:layout_constraintTop_toTopOf="@id/tvStorySatu" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -105,48 +165,510 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="128dp"/>
+                app:layout_constraintGuide_begin="144dp" />
 
             <View
-                app:layout_constraintTop_toBottomOf="@id/guideLuarStory"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
-                android:background="@android:color/darker_gray"/>
-            
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideLuarStory" />
+
             <ImageView
                 android:id="@+id/ivProfilSatu"
                 android:layout_width="32dp"
-                android:layout_height="32dp"/>
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@id/ivFotoSatu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideLuarStory" />
+
+            <TextView
+                android:id="@+id/userSatu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="andipputra"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvLocation"
+                app:layout_constraintStart_toEndOf="@id/ivProfilSatu"
+                app:layout_constraintTop_toTopOf="@id/ivProfilSatu" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daerah Istimewa Yogyakarta"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivProfilSatu"
+                app:layout_constraintStart_toStartOf="@id/userSatu"
+                app:layout_constraintTop_toBottomOf="@id/userSatu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintBottom_toBottomOf="@id/ivProfilSatu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivProfilSatu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivFotoSatu" />
 
             <ImageView
                 android:id="@+id/ivFotoSatu"
-                app:layout_constraintTop_toBottomOf="@id/guideLuarStory"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:scaleType="centerCrop"
                 android:layout_width="match_parent"
-                android:layout_height="512dp"/>
+                android:layout_height="384dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLocation" />
+
+            <ImageView
+                android:id="@+id/ivPostLoveSatu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_like"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivFotoSatu" />
+
+            <ImageView
+                android:id="@+id/ivChatComment"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:scaleX="-1"
+                android:src="@drawable/ic_chat"
+                app:layout_constraintStart_toEndOf="@id/ivPostLoveSatu"
+                app:layout_constraintTop_toTopOf="@id/ivPostLoveSatu" />
+
+            <ImageView
+                android:id="@+id/ivSend"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_send"
+                app:layout_constraintStart_toEndOf="@id/ivChatComment"
+                app:layout_constraintTop_toTopOf="@id/ivChatComment" />
+
+            <ImageView
+                android:id="@+id/ivBookmark"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_outline_bookmark_border_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivSend" />
+
+            <TextView
+                android:id="@+id/tvLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1,006 likes"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/ivPostLoveSatu"
+                app:layout_constraintTop_toBottomOf="@+id/ivPostLoveSatu" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="andipputra"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvLike"
+                app:layout_constraintTop_toBottomOf="@id/tvLike" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Belajar motret gan, bersama"
+                android:textColor="#000"
+                app:layout_constraintStart_toEndOf="@id/tvUsername"
+                app:layout_constraintTop_toTopOf="@id/tvUsername" />
+
+            <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All 2741 Comments"
+                app:layout_constraintStart_toStartOf="@id/tvUsername"
+                app:layout_constraintTop_toBottomOf="@id/tvUsername" />
+
+            <ImageView
+                android:id="@+id/ivAccount"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@id/tvComment"
+                app:layout_constraintTop_toBottomOf="@id/tvComment" />
+
+            <TextView
+                android:id="@+id/tvAddComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Add a comment..."
+                app:layout_constraintBottom_toBottomOf="@id/ivAccount"
+                app:layout_constraintStart_toEndOf="@id/ivAccount"
+                app:layout_constraintTop_toTopOf="@id/ivAccount" />
+
+            <TextView
+                android:id="@+id/tvUploadTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="2 Days Ago"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="@id/ivAccount"
+                app:layout_constraintTop_toBottomOf="@id/ivAccount" />
+
+            <ImageView
+                android:id="@+id/ivProfilDua"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toTopOf="@id/ivFotoDua"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvUploadTime" />
+
+            <TextView
+                android:id="@+id/userDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="udin"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvLocationDua"
+                app:layout_constraintStart_toEndOf="@id/ivProfilDua"
+                app:layout_constraintTop_toTopOf="@id/ivProfilDua" />
+
+            <TextView
+                android:id="@+id/tvLocationDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daerah Istimewa Yogyakarta"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivProfilDua"
+                app:layout_constraintStart_toStartOf="@id/userDua"
+                app:layout_constraintTop_toBottomOf="@id/userDua" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintBottom_toBottomOf="@id/ivProfilDua"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivProfilDua" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivFotoDua" />
 
             <ImageView
                 android:id="@+id/ivFotoDua"
-                app:layout_constraintTop_toBottomOf="@id/ivFotoSatu"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:scaleType="centerCrop"
                 android:layout_width="match_parent"
-                android:layout_height="512dp"/>
+                android:layout_height="384dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivProfilDua" />
 
-            <!--            <ImageView-->
-<!--                android:src="@drawable/foto_tiga"-->
-<!--                android:scaleType="centerCrop"-->
-<!--                android:layout_width="100dp"-->
-<!--                android:layout_height="100dp"/>-->
+            <ImageView
+                android:id="@+id/ivPostLoveDua"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_like"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivFotoDua" />
+
+            <ImageView
+                android:id="@+id/ivChatCommentDua"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:scaleX="-1"
+                android:src="@drawable/ic_chat"
+                app:layout_constraintStart_toEndOf="@id/ivPostLoveDua"
+                app:layout_constraintTop_toTopOf="@id/ivPostLoveDua" />
+
+            <ImageView
+                android:id="@+id/ivSendDua"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_send"
+                app:layout_constraintStart_toEndOf="@id/ivChatCommentDua"
+                app:layout_constraintTop_toTopOf="@id/ivChatCommentDua" />
+
+            <ImageView
+                android:id="@+id/ivBookmarkDua"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_outline_bookmark_border_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivSendDua" />
+
+            <TextView
+                android:id="@+id/tvLikeDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1,006 likes"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/ivPostLoveDua"
+                app:layout_constraintTop_toBottomOf="@+id/ivPostLoveDua" />
+
+            <TextView
+                android:id="@+id/tvUsernameDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="udin"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvLikeDua"
+                app:layout_constraintTop_toBottomOf="@id/tvLikeDua" />
+
+            <TextView
+                android:id="@+id/tvContentDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Indahnya hariku dikala tua"
+                android:textColor="#000"
+                app:layout_constraintStart_toEndOf="@id/tvUsernameDua"
+                app:layout_constraintTop_toTopOf="@id/tvUsernameDua" />
+
+            <TextView
+                android:id="@+id/tvCommentDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All 2741 Comments"
+                app:layout_constraintStart_toStartOf="@id/tvUsernameDua"
+                app:layout_constraintTop_toBottomOf="@id/tvUsernameDua" />
+
+            <ImageView
+                android:id="@+id/ivAccountDua"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@id/tvCommentDua"
+                app:layout_constraintTop_toBottomOf="@id/tvCommentDua" />
+
+            <TextView
+                android:id="@+id/tvAddCommentDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Add a comment..."
+                app:layout_constraintBottom_toBottomOf="@id/ivAccountDua"
+                app:layout_constraintStart_toEndOf="@id/ivAccount"
+                app:layout_constraintTop_toTopOf="@id/ivAccountDua" />
+
+            <TextView
+                android:id="@+id/tvUploadTimeDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="2 Days Ago"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="@id/ivAccountDua"
+                app:layout_constraintTop_toBottomOf="@id/ivAccountDua" />
+
+            <ImageView
+                android:id="@+id/ivProfilTiga"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toTopOf="@id/ivFotoTiga"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvUploadTimeDua" />
+
+            <TextView
+                android:id="@+id/userTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="rahmatika"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvLocationTiga"
+                app:layout_constraintStart_toEndOf="@id/ivProfilTiga"
+                app:layout_constraintTop_toTopOf="@id/ivProfilTiga" />
+
+            <TextView
+                android:id="@+id/tvLocationTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daerah Istimewa Yogyakarta"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivProfilTiga"
+                app:layout_constraintStart_toStartOf="@id/userTiga"
+                app:layout_constraintTop_toBottomOf="@id/userTiga" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintBottom_toBottomOf="@id/ivProfilTiga"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivProfilTiga" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivFotoTiga" />
+
+            <ImageView
+                android:id="@+id/ivFotoTiga"
+                android:layout_width="match_parent"
+                android:layout_height="384dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivProfilTiga" />
+
+            <ImageView
+                android:id="@+id/ivPostLoveTiga"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_like"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivFotoTiga" />
+
+            <ImageView
+                android:id="@+id/ivChatCommentTiga"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:scaleX="-1"
+                android:src="@drawable/ic_chat"
+                app:layout_constraintStart_toEndOf="@id/ivPostLoveTiga"
+                app:layout_constraintTop_toTopOf="@id/ivPostLoveTiga" />
+
+            <ImageView
+                android:id="@+id/ivSendTiga"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_send"
+                app:layout_constraintStart_toEndOf="@id/ivChatCommentTiga"
+                app:layout_constraintTop_toTopOf="@id/ivChatCommentTiga" />
+
+            <ImageView
+                android:id="@+id/ivBookmarkTiga"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_outline_bookmark_border_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivSendTiga" />
+
+            <TextView
+                android:id="@+id/tvLikeTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1,006 likes"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/ivPostLoveTiga"
+                app:layout_constraintTop_toBottomOf="@+id/ivPostLoveTiga" />
+
+            <TextView
+                android:id="@+id/tvUsernameTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rahmatika"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvLikeTiga"
+                app:layout_constraintTop_toBottomOf="@id/tvLikeTiga" />
+
+            <TextView
+                android:id="@+id/tvContentTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textColor="#000"
+                android:text="Menikmati sore yang indah di jogja"
+                app:layout_constraintStart_toEndOf="@id/tvUsernameTiga"
+                app:layout_constraintTop_toTopOf="@id/tvUsernameTiga" />
+
+            <TextView
+                android:id="@+id/tvCommentTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All 2741 Comments"
+                app:layout_constraintStart_toStartOf="@id/tvUsernameTiga"
+                app:layout_constraintTop_toBottomOf="@id/tvUsernameTiga" />
+
+            <ImageView
+                android:id="@+id/ivAccountTiga"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@id/tvCommentTiga"
+                app:layout_constraintTop_toBottomOf="@id/tvCommentTiga" />
+
+            <TextView
+                android:id="@+id/tvAddCommentTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Add a comment..."
+                app:layout_constraintBottom_toBottomOf="@id/ivAccountTiga"
+                app:layout_constraintStart_toEndOf="@id/ivAccountTiga"
+                app:layout_constraintTop_toTopOf="@id/ivAccountTiga" />
+
+            <TextView
+                android:id="@+id/tvUploadTimeTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="2 Days Ago"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="@id/ivAccountTiga"
+                app:layout_constraintTop_toBottomOf="@id/ivAccountTiga" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
     </ScrollView>
 
@@ -187,10 +709,10 @@
 
     <ImageView
         android:id="@+id/ivDM"
-        app:layout_constraintTop_toTopOf="@id/headerBG"
-        app:layout_constraintBottom_toBottomOf="@id/headerBG"
+        app:layout_constraintTop_toTopOf="@id/ivCamera"
+        app:layout_constraintBottom_toBottomOf="@id/ivCamera"
         app:layout_constraintEnd_toEndOf="@id/headerBG"
-        android:src="@drawable/ic_dm"
+        android:src="@drawable/ic_send"
         android:layout_marginEnd="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -200,8 +722,8 @@
         app:layout_constraintTop_toTopOf="@id/headerBG"
         app:layout_constraintBottom_toBottomOf="@id/headerBG"
         app:layout_constraintStart_toEndOf="@id/ivCamera"
-        android:text="Instagram"
-        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#000"
         android:layout_marginStart="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -261,7 +783,6 @@
         app:layout_constraintBottom_toBottomOf="@id/footerBG"
         app:layout_constraintStart_toEndOf="@id/ivLove"
         app:layout_constraintEnd_toEndOf="@id/footerBG"
-        android:src="@drawable/foto_tiga"
         android:scaleType="centerCrop"
         android:layout_width="32dp"
         android:layout_height="32dp"/>
